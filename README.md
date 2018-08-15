@@ -3,7 +3,13 @@
 ## Introduction
 
 Here is my pytorch implementation of the model described in the paper **You Only Look Once:
-Unified, Real-Time Object Detection** [paper](https://arxiv.org/abs/1606.01781). 
+Unified, Real-Time Object Detection** [paper](https://arxiv.org/abs/1506.02640). 
+
+## How to use my code
+With my code, you can:
+* **Train your model from scratch**
+* **Train your new model with my trained model**
+* **Evaluate test images with my trained model**
 
 ## Datasets:
 
