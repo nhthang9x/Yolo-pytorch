@@ -13,18 +13,14 @@ With my code, you can:
 
 ## Datasets:
 
-Statistics of datasets I used for experiments. These datasets could be download from [link](https://drive.google.com/drive/u/0/folders/0Bz8a_Dbh9Qhbfll6bVpmNUtUcFdjYmF2SEpmZUZUcVNiMUw1TWN6RDV3a0JHT3kxLVhVR2M)
+I used 4 different datases: VOC2007, VOC2012, COCO2014 and COCO2017. Statistics of datasets I used for experiments are shown below
 
-| Dataset                | Classes | Train samples | Test samples |
-|------------------------|:---------:|:---------------:|:--------------:|
-| AG’s News              |    4    |    120 000    |     7 600    |
-| Sogou News             |    5    |    450 000    |    60 000    |
-| DBPedia                |    14   |    560 000    |    70 000    |
-| Yelp Review Polarity   |    2    |    560 000    |    38 000    |
-| Yelp Review Full       |    5    |    650 000    |    50 000    |
-| Yahoo! Answers         |    10   |   1 400 000   |    60 000    |
-| Amazon Review Full     |    5    |   3 000 000   |    650 000   |
-| Amazon Review Polarity |    2    |   3 600 000   |    400 000   |
+| Dataset                | Classes | #Train images/objects | #Validation images/objects |
+|------------------------|:---------:|:-----------------------:|:----------------------------:|
+| VOC2007                |    20   |      5011/12608       |           4952/-           |
+| VOC2012                |    20   |      5717/13609       |           5823/13841       |
+| COCO2014               |    80   |         83k/-         |            41k/-           |
+| COCO2017               |    20   |         118k/-        |             5k/-           |
 
 ## Setting:
 
