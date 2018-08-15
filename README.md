@@ -8,8 +8,8 @@ Unified, Real-Time Object Detection** [paper](https://arxiv.org/abs/1506.02640).
 ## How to use my code
 With my code, you can:
 * **Train your model from scratch**
-* **Train your new model with my trained model**
-* **Evaluate test images with my trained model**
+* **Train your model with my trained model**
+* **Evaluate test images with either my trained model or yours**
 
 ## Datasets:
 
@@ -30,24 +30,19 @@ mkdir data
 ```
 
 - **VOC**:
-  Download the voc images and annotations from [voc website](http://host.robots.ox.ac.uk/pascal/VOC/voc20xx) with xx is 07 or 12. Make sure to put the files as the following structure:
+  Download the voc images and annotations from [VOC2007](http://host.robots.ox.ac.uk/pascal/VOC/voc2007) or [VOC2012](http://host.robots.ox.ac.uk/pascal/VOC/voc2012). Make sure to put the files as the following structure:
   ```
-  COCO
-  ├── annotations
-  │   ├── instances_train2014.json
-  │   ├── instances_train2017.json
-  │   ├── instances_val2014.json
-  │   ├── instances_val2017.json
-  │── images
-  │   ├── train2014
-  │   ├── train2017
-  │   ├── val2014
-  │   ├── val2017
-  └── anno_pickle
-      ├── COCO_train2014.pkl
-      ├── COCO_val2014.pkl
-      ├── COCO_train2017.pkl
-      ├── COCO_val2017.pkl
+  VOCDevkit
+  ├── VOC2007
+  │   ├── Annotations  
+  │   ├── ImageSets
+  │   ├── JPEGImages
+  │   ├── ...
+  └── VOC2012
+      ├── Annotations  
+      ├── ImageSets
+      ├── JPEGImages
+      └── ...
   ```
   
 - **COCO**:
@@ -58,20 +53,25 @@ mkdir data
   │   ├── instances_train2014.json
   │   ├── instances_train2017.json
   │   ├── instances_val2014.json
-  │   ├── instances_val2017.json
+  │   └── instances_val2017.json
   │── images
   │   ├── train2014
   │   ├── train2017
   │   ├── val2014
-  │   ├── val2017
+  │   └── val2017
   └── anno_pickle
       ├── COCO_train2014.pkl
       ├── COCO_val2014.pkl
       ├── COCO_train2017.pkl
-      ├── COCO_val2017.pkl
+      └── COCO_val2017.pkl
   ```
   
 ## Setting:
+
+* **Model structure**: In compared to the paper, I changed structure of top layers, to make it converge better. You could see the detail of my YoloNet in **src/yolo_net.py**.
+* **Data augmentation**: I performed dataset augmentation, to make sure that you could re-trained my model with small dataset (~500 images). Techniques applied here includes HSV adjustment, crop, resize and flip with random probabilities
+* **Loss**: The losses for object and non-objects are combined into a single loss in my implementation
+* **Optimizer**:
 
 I almost keep default setting as described in the paper. For optimizer, I use **Adam** optimizer with initial learning rate of 0.001 instead of SGD with learning rate of 0.01.
 
