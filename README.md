@@ -99,7 +99,7 @@ If you want to train a model with both COCO datasets (training set = train2014 +
 
 ## Test
 
-For each type of dataset (VOC or COCO), I provide 3 different of test scripts:
+For each type of dataset (VOC or COCO), I provide 3 different test scripts:
 
 If you want to test a trained model with a standard VOC dataset, you could run:
 - **python test_xxx_dataset.py --year year**: For example, python test_coco_dataset.py --year 2014
