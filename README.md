@@ -20,7 +20,7 @@ I used 4 different datases: VOC2007, VOC2012, COCO2014 and COCO2017. Statistics 
 | VOC2007                |    20   |      5011/12608       |           4952/-           |
 | VOC2012                |    20   |      5717/13609       |           5823/13841       |
 | COCO2014               |    80   |         83k/-         |            41k/-           |
-| COCO2017               |    20   |         118k/-        |             5k/-           |
+| COCO2017               |    80   |         118k/-        |             5k/-           |
 
 Create a data folder under the repository,
 
@@ -108,7 +108,7 @@ If you want to test a model with some images, you could put them into the same f
 - **python test_xxx_images.py --input path/to/input/folder --output path/to/output/folder**: For example, python train_voc_images.py --input test_images --output test_images
 
 If you want to test a model with a video, you could run :
-- **python test_xxx_images.py --input path/to/input/file --output path/to/output/file**: For example, python test_coco_video --input test_videos/input.mp4 --output test_videos/output.mp4
+- **python test_xxx_video.py --input path/to/input/file --output path/to/output/file**: For example, python test_coco_video --input test_videos/input.mp4 --output test_videos/output.mp4
 
 You could find all trained models I have trained in [link](https://drive.google.com/open?id=1gx1qvgu8rZRtEgkCMA9KqJZtFwjr8fc-)
 
@@ -117,6 +117,7 @@ You could find all trained models I have trained in [link](https://drive.google.
 I run experiments in 2 machines, one with NVIDIA TITAN X 12gb GPU and the other with NVIDIA quadro 6000 24gb GPU.
 
 The training/test loss curves for each experiment are shown below:
+
 -**VOC2007**
 -**VOC2012**
 -**COCO2014**
