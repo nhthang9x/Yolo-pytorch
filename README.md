@@ -71,7 +71,9 @@ mkdir data
 * **Model structure**: In compared to the paper, I changed structure of top layers, to make it converge better. You could see the detail of my YoloNet in **src/yolo_net.py**.
 * **Data augmentation**: I performed dataset augmentation, to make sure that you could re-trained my model with small dataset (~500 images). Techniques applied here includes HSV adjustment, crop, resize and flip with random probabilities
 * **Loss**: The losses for object and non-objects are combined into a single loss in my implementation
-* **Optimizer**:
+* **Optimizer**: My learning rate schedule is as follows: 
+ - aa
+ - bb
 
 I almost keep default setting as described in the paper. For optimizer, I use **Adam** optimizer with initial learning rate of 0.001 instead of SGD with learning rate of 0.01.
 
