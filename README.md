@@ -99,7 +99,18 @@ If you want to train a model with both COCO datasets (training set = train2014 +
 
 ## Test
 
-You could find some trained models I have trained in [link](https://drive.google.com/open?id=1gx1qvgu8rZRtEgkCMA9KqJZtFwjr8fc-)
+For each type of dataset (VOC or COCO), I provide 3 different of test scripts:
+
+If you want to test a trained model with a standard VOC dataset, you could run:
+- **python test_xxx_dataset.py --year year**: For example, python test_coco_dataset.py --year 2014
+
+If you want to test a model with some images, you could put them into the same folder, whose path is **path/to/input/folder**, then run:
+- **python test_xxx_images.py --input path/to/input/folder --output path/to/output/folder**: For example, python train_voc_images.py --input test_images --output test_images
+
+If you want to test a model with a video, you could run :
+- **python test_xxx_images.py --input path/to/input/file --output path/to/output/file**: For example, python test_coco_video --input test_videos/input.mp4 --output test_videos/output.mp4
+
+You could find all trained models I have trained in [link](https://drive.google.com/open?id=1gx1qvgu8rZRtEgkCMA9KqJZtFwjr8fc-)
 
 ## Experiments:
 
