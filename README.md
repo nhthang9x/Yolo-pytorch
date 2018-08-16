@@ -114,7 +114,7 @@ You could find all trained models I have trained in [link](https://drive.google.
 
 ## Experiments:
 
-I run experiments in 2 machines, one with NVIDIA TITAN X 12gb GPU and the other with NVIDIA quadro 6000 24gb GPU.
+I trained models in 2 machines, one with NVIDIA TITAN X 12gb GPU and the other with NVIDIA quadro 6000 24gb GPU.
 
 The training/test loss curves for each experiment are shown below:
 
@@ -122,4 +122,5 @@ The training/test loss curves for each experiment are shown below:
 - **VOC2012**
 - **COCO2014**
 - **COCO2014+2017**
+
 You could find detail log of each experiment containing loss, accuracy and confusion matrix at the end of each epoch in **output/datasetname_depth_number/logs.txt**, for example output/ag_news_depth_29/logs.txt
