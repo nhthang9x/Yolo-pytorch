@@ -71,7 +71,7 @@ mkdir data
 * **Model structure**: In compared to the paper, I changed structure of top layers, to make it converge better. You could see the detail of my YoloNet in **src/yolo_net.py**.
 * **Data augmentation**: I performed dataset augmentation, to make sure that you could re-trained my model with small dataset (~500 images). Techniques applied here includes HSV adjustment, crop, resize and flip with random probabilities
 * **Loss**: The losses for object and non-objects are combined into a single loss in my implementation
-* **Optimizer**: My learning rate schedule is as follows: 
+* **Optimizer**: I used SGD optimizer and my learning rate schedule is as follows: 
 
 |         Epoches        | Learning rate |
 |------------------------|:---------------:|
@@ -80,20 +80,22 @@ mkdir data
 |          80-109        |      1e-5     |
 |          110-end       |      1e-6     |
 
-I almost keep default setting as described in the paper. For optimizer, I use **Adam** optimizer with initial learning rate of 0.001 instead of SGD with learning rate of 0.01.
-
-Additionally, in the original model, one epoch is seen as a loop over batch_size x num_batch records (128x5000 or 128x10000 or 128x30000), so it means that there are records used more than once for 1 epoch. In my model, 1 epoch is a complete loop over the whole dataset, where each record is used exactly once.
-
 ## Training
 
-If you want to train a model with common dataset and default parameters, you could run:
-- **python train.py -d dataset_name**: For example, python train.py -d dbpedia
+For each dataset, I provide 2 different pre-trained models, which I trained with corresresponding dataset:
+- **whole_model_trained_yolo_xxx**: The whole trained model.
+- **only_params_trained_yolo_xxx**: The trained parameters only.
 
-If you want to train a model with common dataset and your preference parameters, like the depth of network, you could run:
-- **python train.py -d dataset_name -t depth**: For example, python train.py -d dbpedia -t 9
+You could specify which trained model file you want to use, by the parameter **pre_trained_model_type**. The parameter **pre_trained_model_path** then is the path to that file.
 
-If you want to train a model with your own dataset, you need to specify the path to input and output folders:
-- **python train.py -i path/to/input/folder -o path/to/output/folder**
+If you want to train a model with a VOC dataset, you could run:
+- **python train_voc.py --year year**: For example, python train_voc.py --year 2012
+
+If you want to train a model with a COCO dataset, you could run:
+- **python train_coco.py --year year**: For example, python train_coco.py --year 2014
+
+If you want to train a model with both COCO datasets (training set = train2014 + val2014 + train2017, test set = val2017), you could run:
+- **python train_coco_all.py**
 
 ## Test
 
