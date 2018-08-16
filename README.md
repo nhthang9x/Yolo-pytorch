@@ -72,6 +72,7 @@ mkdir data
 * **Data augmentation**: I performed dataset augmentation, to make sure that you could re-trained my model with small dataset (~500 images). Techniques applied here includes HSV adjustment, crop, resize and flip with random probabilities
 * **Loss**: The losses for object and non-objects are combined into a single loss in my implementation
 * **Optimizer**: My learning rate schedule is as follows: 
+
 |         Epoches        | Learning rate |
 |------------------------|:---------------:|
 |          0-4           |      1e-5     |
