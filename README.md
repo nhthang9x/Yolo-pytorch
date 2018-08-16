@@ -72,8 +72,12 @@ mkdir data
 * **Data augmentation**: I performed dataset augmentation, to make sure that you could re-trained my model with small dataset (~500 images). Techniques applied here includes HSV adjustment, crop, resize and flip with random probabilities
 * **Loss**: The losses for object and non-objects are combined into a single loss in my implementation
 * **Optimizer**: My learning rate schedule is as follows: 
- - aa
- - bb
+|         Epoches        | Learning rate |
+|------------------------|:---------------:|
+|          0-4           |      1e-5     |
+|          5-79          |      1e-4     |
+|          80-109        |      1e-5     |
+|          110-end       |      1e-6     |
 
 I almost keep default setting as described in the paper. For optimizer, I use **Adam** optimizer with initial learning rate of 0.001 instead of SGD with learning rate of 0.01.
 
