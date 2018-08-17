@@ -120,6 +120,7 @@ I trained models in 2 machines, one with NVIDIA TITAN X 12gb GPU and the other w
 The training/test loss curves for each experiment are shown below:
 
 - **VOC2007**
+![voc2007 loss](demo/voc2007.png) 
 - **VOC2012**
 - **COCO2014**
 - **COCO2014+2017**
