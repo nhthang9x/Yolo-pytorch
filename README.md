@@ -4,6 +4,10 @@
 
 Here is my pytorch implementation of the model described in the paper **You Only Look Once:
 Unified, Real-Time Object Detection** [paper](https://arxiv.org/abs/1506.02640). 
+<p align="center">
+  <img src="demo/video.mp4" width="500"><br/>
+  <i>Scroll down if you want to make your own video.</i>
+</p>
 
 ## How to use my code
 With my code, you can:
@@ -149,4 +153,3 @@ Some output predictions for experiments for each dataset are shown below:
 - **COCO2014+2017**
 
 <img src="demo/coco2014_2017_1.jpg" width="280"> <img src="demo/coco2014_2017_2.jpg" width="280"> <img src="demo/coco2014_2017_3.jpg" width="280">
-<img src="demo/video.mp4">
