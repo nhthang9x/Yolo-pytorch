@@ -80,7 +80,7 @@ mkdir data
 |          80-109        |      1e-5     |
 |          110-end       |      1e-6     |
 
-* In my implementation, in every epoch, the model is saved only when its loss is the lowest one so far. You could also use early stopping, which could be triggerred by specify a positive integer value for parameter **es_patience**, to stop training process when validation loss has not been improved for **es_patience** epoches.
+* In my implementation, in every epoch, the model is saved only when its loss is the lowest one so far. You could also use early stopping, which could be triggerred by specifying a positive integer value for parameter **es_patience**, to stop training process when validation loss has not been improved for **es_patience** epoches.
 ## Training
 
 For each dataset, I provide 2 different pre-trained models, which I trained with corresresponding dataset:
