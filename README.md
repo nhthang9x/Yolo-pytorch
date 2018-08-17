@@ -134,7 +134,7 @@ Some output predictions for experiments for each dataset are shown below:
 
 - **VOC2007**
 
-<img src="demo/voc2007_1.jpg" width="300"><img src="demo/voc2007_2.jpg" width="300"><img src="demo/voc2007_3.jpg" width="300">
+<img src="demo/voc2007_1.jpg" width="250"> <img src="demo/voc2007_2.jpg" width="250"> <img src="demo/voc2007_3.jpg" width="250">
 
 - **VOC2012**
 
