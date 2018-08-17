@@ -122,7 +122,10 @@ The training/test loss curves for each experiment are shown below:
 - **VOC2007**
 ![voc2007 loss](demo/voc2007.png) 
 - **VOC2012**
+![voc2012 loss](demo/voc2012.png)
 - **COCO2014**
+![coco2014 loss](demo/coco2014.png)
 - **COCO2014+2017**
+![coco2014_2017 loss](demo/coco2014_2017.png)
 
 You could find detail log of each experiment containing loss, accuracy and confusion matrix at the end of each epoch in **output/datasetname_depth_number/logs.txt**, for example output/ag_news_depth_29/logs.txt
