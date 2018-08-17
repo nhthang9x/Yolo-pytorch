@@ -133,11 +133,13 @@ Statistics for mAP will be updated soon ...
 Some output predictions for experiments for each dataset are shown below:
 
 - **VOC2007**
-![](demo/voc2007_1.jpg)|![](demo/voc2007_2.jpg)|![](demo/voc2007_3.jpg)
-:---------------------:|:---------------------:|:---------------------:
+
+![](demo/voc2007_1.jpg | width=100)|![](demo/voc2007_2.jpg | width=100)|![](demo/voc2007_3.jpg | width=100)
+
 - **VOC2012**
+
 ![](demo/voc2012_1.jpg)|![](demo/voc2012_2.jpg)|![](demo/voc2012_3.jpg)
-:---------------------:|:---------------------:|:---------------------:
+
 - **COCO2014**
 ![coco2014 loss](demo/coco2014.png)
 - **COCO2014+2017**
