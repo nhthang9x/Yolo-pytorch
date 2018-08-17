@@ -128,4 +128,15 @@ The training/test loss curves for each experiment are shown below:
 - **COCO2014+2017**
 ![coco2014_2017 loss](demo/coco2014_2017.png)
 
-You could find detail log of each experiment containing loss, accuracy and confusion matrix at the end of each epoch in **output/datasetname_depth_number/logs.txt**, for example output/ag_news_depth_29/logs.txt
+Statistics for mAP will be updated soon ...
+
+Some output predictions for experiments for each dataset are shown below:
+
+- **VOC2007**
+![](demo/voc2007_1.jpg)|![](demo/voc2007_2.jpg)|![](demo/voc2007_3.jpg)
+- **VOC2012**
+![](demo/voc2012_1.jpg)|![](demo/voc2012_2.jpg)|![](demo/voc2012_3.jpg)
+- **COCO2014**
+![coco2014 loss](demo/coco2014.png)
+- **COCO2014+2017**
+![coco2014_2017 loss](demo/coco2014_2017.png)
