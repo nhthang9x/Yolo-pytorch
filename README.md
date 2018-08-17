@@ -138,9 +138,12 @@ Some output predictions for experiments for each dataset are shown below:
 
 - **VOC2012**
 
-![](demo/voc2012_1.jpg)|![](demo/voc2012_2.jpg)|![](demo/voc2012_3.jpg)
+<img src="demo/voc2012_1.jpg" width="280"> <img src="demo/voc2012_2.jpg" width="280"> <img src="demo/voc2012_3.jpg" width="280">
 
 - **COCO2014**
-![coco2014 loss](demo/coco2014.png)
+
+<img src="demo/coco2014_1.jpg" width="280"> <img src="demo/coco2014_2.jpg" width="280"> <img src="demo/coco2014_3.jpg" width="280">
+
 - **COCO2014+2017**
-![coco2014_2017 loss](demo/coco2014_2017.png)
+
+<img src="demo/coco2014_2017_1.jpg" width="280"> <img src="demo/coco2014_2017_2.jpg" width="280"> <img src="demo/coco2014_2017_3.jpg" width="280">
