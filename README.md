@@ -5,8 +5,8 @@
 Here is my pytorch implementation of the model described in the paper **You Only Look Once:
 Unified, Real-Time Object Detection** [paper](https://arxiv.org/abs/1506.02640). 
 <p align="center">
-  <img src="demo/video.mp4" width="500"><br/>
-  <i>Scroll down if you want to make your own video.</i>
+  <img src="demo/video.gif"><br/>
+  <i>An example of my model's output.</i>
 </p>
 
 ## How to use my code
