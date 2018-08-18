@@ -10,10 +10,17 @@ Unified, Real-Time Object Detection** [paper](https://arxiv.org/abs/1506.02640).
 </p>
 
 ## How to use my code
+
 With my code, you can:
 * **Train your model from scratch**
 * **Train your model with my trained model**
 * **Evaluate test images with either my trained model or yours**
+
+## Requirements:
+
+* **python 3.6**
+* **pytorch 0.4**
+* **opencv (cv2)**
 
 ## Datasets:
 
@@ -94,26 +101,26 @@ For each dataset, I provide 2 different pre-trained models, which I trained with
 You could specify which trained model file you want to use, by the parameter **pre_trained_model_type**. The parameter **pre_trained_model_path** then is the path to that file.
 
 If you want to train a model with a VOC dataset, you could run:
-- **python train_voc.py --year year**: For example, python train_voc.py --year 2012
+- **python3 train_voc.py --year year**: For example, python train_voc.py --year 2012
 
 If you want to train a model with a COCO dataset, you could run:
-- **python train_coco.py --year year**: For example, python train_coco.py --year 2014
+- **python3 train_coco.py --year year**: For example, python train_coco.py --year 2014
 
 If you want to train a model with both COCO datasets (training set = train2014 + val2014 + train2017, val set = val2017), you could run:
-- **python train_coco_all.py**
+- **python3 train_coco_all.py**
 
 ## Test
 
 For each type of dataset (VOC or COCO), I provide 3 different test scripts:
 
 If you want to test a trained model with a standard VOC dataset, you could run:
-- **python test_xxx_dataset.py --year year**: For example, python test_coco_dataset.py --year 2014
+- **python3 test_xxx_dataset.py --year year**: For example, python test_coco_dataset.py --year 2014
 
 If you want to test a model with some images, you could put them into the same folder, whose path is **path/to/input/folder**, then run:
-- **python test_xxx_images.py --input path/to/input/folder --output path/to/output/folder**: For example, python train_voc_images.py --input test_images --output test_images
+- **python3 test_xxx_images.py --input path/to/input/folder --output path/to/output/folder**: For example, python train_voc_images.py --input test_images --output test_images
 
 If you want to test a model with a video, you could run :
-- **python test_xxx_video.py --input path/to/input/file --output path/to/output/file**: For example, python test_coco_video --input test_videos/input.mp4 --output test_videos/output.mp4
+- **python3 test_xxx_video.py --input path/to/input/file --output path/to/output/file**: For example, python test_coco_video --input test_videos/input.mp4 --output test_videos/output.mp4
 
 You could find all trained models I have trained in [link](https://drive.google.com/open?id=1gx1qvgu8rZRtEgkCMA9KqJZtFwjr8fc-)
 
