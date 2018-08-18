@@ -21,6 +21,8 @@ With my code, you can:
 * **python 3.6**
 * **pytorch 0.4**
 * **opencv (cv2)**
+* **tensorboard**
+* **tensorboardX** (This library could be skipped if you do not use SummaryWriter)
 
 ## Datasets:
 
